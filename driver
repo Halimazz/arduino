@@ -1,0 +1,27 @@
+int En = 9;
+int Rpwm1 = 8;
+int Lpwm1 = 7;
+int En1 = 10;
+int Rpwm2 = 12;
+int Lpwm2 = 11;
+
+void setup() {
+  // put your setup code here, to run once:
+pinMode(En,OUTPUT);
+pinMode(En1,OUTPUT);
+pinMode(Rpwm1,OUTPUT);
+pinMode(Rpwm2,OUTPUT);
+pinMode(Lpwm1,OUTPUT);
+pinMode(Lpwm2,OUTPUT);
+
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+     analogWrite(En,100);  //Ngatur kecepatan
+     digitalWrite(Rpwm,HIGH);
+     digitalWrite(Lpwm,LOW);
+     analogWrite(En1,100);  //Ngatur kecepatan
+     digitalWrite(Rpwm,HIGH);
+     digitalWrite(Lpwm,LOW);
+}
